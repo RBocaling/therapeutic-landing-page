@@ -53,14 +53,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get in <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">Touch</span>
+            Get in{" "}
+            <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+              Touch
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have questions? We're here to help. Reach out and let's start your wellness journey together.
+            Have questions? We're here to help. Reach out and let's start your
+            wellness journey together.
           </p>
         </div>
 
@@ -69,7 +73,10 @@ const Contact = () => {
           <div className="animate-in fade-in slide-in-from-left duration-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Full Name
                 </label>
                 <Input
@@ -84,7 +91,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Email Address
                 </label>
                 <Input
@@ -100,7 +110,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Phone Number
                 </label>
                 <Input
@@ -115,7 +128,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
                   Message
                 </label>
                 <Textarea
@@ -151,8 +167,12 @@ const Contact = () => {
                     <info.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
                   </div>
                   <div>
-                    <div className="font-medium text-foreground">{info.title}</div>
-                    <div className="text-sm text-muted-foreground">{info.content}</div>
+                    <div className="font-medium text-foreground">
+                      {info.title}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {info.content}
+                    </div>
                   </div>
                 </a>
               ))}
@@ -177,15 +197,21 @@ const Contact = () => {
             </div>
 
             <div className="p-8 rounded-2xl bg-gradient-to-br from-primary-light/30 to-primary-light/10 border border-primary/20">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Office Hours</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Office Hours
+              </h3>
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>
-                  <span className="font-semibold text-foreground">9:00 AM - 6:00 PM</span>
+                  <span className="font-semibold text-foreground">
+                    9:00 AM - 6:00 PM
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Saturday</span>
-                  <span className="font-semibold text-foreground">10:00 AM - 4:00 PM</span>
+                  <span className="font-semibold text-foreground">
+                    10:00 AM - 4:00 PM
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday</span>

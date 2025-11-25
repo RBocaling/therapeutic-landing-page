@@ -33,7 +33,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-background to-primary-light/10 border-t border-border">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-7">
         <div className="flex flex-col md:flex-row items-center  gap-8 mb- w-full">
           {/* Brand */}
           <div className="lg:col-span-2">

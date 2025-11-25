@@ -74,11 +74,11 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-24 bg-gradient-to-b from-primary-light/10 to-background"
+      className="py-6 bg-gradient-to-b from-primary-light/10 to-background"
       style={{ boxShadow: "inset 0 1px 0 0 hsl(var(--border)/0.3)" }}
     >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700">
+        <div className="text-center mb-9 animate-in fade-in slide-in-from-top duration-700">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Comprehensive{" "}
             <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
@@ -92,7 +92,7 @@ const Services = () => {
         </div>
 
         {/* Featured Services Images */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div
             className="relative rounded-3xl overflow-hidden border border-border/50 group animate-in fade-in slide-in-from-left duration-700"
             style={{ boxShadow: "var(--shadow-strong)" }}
@@ -159,7 +159,7 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-20 text-center bg-gradient-to-r from-primary-light/30 to-primary-light/10 rounded-3xl p-12 border border-primary/20 animate-in fade-in slide-in-from-bottom duration-700 delay-500">
+        <div className="mt-7 text-center bg-gradient-to-r from-primary-light/30 to-primary-light/10 rounded-3xl p-12 border border-primary/20 animate-in fade-in slide-in-from-bottom duration-700 delay-500">
           <h3 className="text-3xl font-bold mb-4 text-foreground">
             Ready to Begin Your Wellness Journey?
           </h3>

@@ -39,10 +39,10 @@ const Team = () => {
   return (
     <section
       id="team"
-      className="py-24 bg-gradient-to-b from-primary-light/20 to-background"
+      className="py-5 bg-gradient-to-b from-primary-light/20 to-background"
     >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700">
+        <div className="text-center mb-8 animate-in fade-in slide-in-from-top duration-700">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Meet the{" "}
             <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">

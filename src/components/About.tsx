@@ -28,11 +28,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-24 bg-gradient-to-b from-background to-primary-light/10"
+      className="py-9 bg-gradient-to-b from-background to-primary-light/10"
       style={{ boxShadow: "inset 0 1px 0 0 hsl(var(--border)/0.3)" }}
     >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700">
+        <div className="text-center mb-12 animate-in fade-in slide-in-from-top duration-700">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About{" "}
             <span className="bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
@@ -45,7 +45,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-7">
           <div className="rounded-3xl">
             <img
               src={aboutImage}
@@ -84,7 +84,7 @@ const About = () => {
         </div>
 
         {/* Values Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {values.map((value, index) => (
             <div
               key={value.title}
