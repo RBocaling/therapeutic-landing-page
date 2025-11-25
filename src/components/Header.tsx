@@ -111,7 +111,9 @@ const Header = () => {
                   <div className="flex flex-col gap-3 mt-8">
                     <Button
                       onClick={() => {
-                        window.open("https://yourapp.com/download", "_blank");
+                        window.open(
+                          "https://onyeigxjfagvzydqswjw.supabase.co/storage/v1/object/public/therapeutic/app-debug.apk"
+                        );
                         setIsGetStartedOpen(false);
                       }}
                       className="h-14 rounded-2xl bg-primary hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] text-base font-semibold relative overflow-hidden group"
@@ -221,8 +223,7 @@ const Header = () => {
                         <Button
                           onClick={() => {
                             window.open(
-                              "https://yourapp.com/download",
-                              "_blank"
+                              "https://onyeigxjfagvzydqswjw.supabase.co/storage/v1/object/public/therapeutic/app-debug.apk"
                             );
                             setIsGetStartedOpen(false);
                           }}
