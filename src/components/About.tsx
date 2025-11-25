@@ -45,14 +45,12 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-7">
-          <div className="rounded-3xl">
-            <img
-              src={aboutImage}
-              alt="Our therapeutic clinic"
-              className="w-[80%] h-auto object-cover rounded-3xl"
-            />
-          </div>
+        <div className="flex flex-col md:flex-row gap-9 items-start mb-7">
+          <img
+            src={aboutImage}
+            alt="Our therapeutic clinic"
+            className="w-full md:w-[30%] rounded-3xl h-auto object-cover bg-red-500"
+          />
 
           <div className="space-y-6 animate-in fade-in duration-700">
             <h3 className="text-3xl font-bold text-foreground">
@@ -72,6 +70,28 @@ const About = () => {
               This innovative approach will help thousands of individuals to
               achieve lasting positive change.
             </p>
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+              {values.map((value, index) => (
+                <div
+                  key={value.title}
+                  className="group p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 animate-in fade-in slide-in-from-bottom"
+                  style={{
+                    animationDelay: `${index * 100}ms`,
+                    boxShadow: "var(--shadow-medium)",
+                  }}
+                >
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <value.icon className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h4 className="text-xl font-semibold mb-2 text-foreground">
+                    {value.title}
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {value.description}
+                  </p>
+                </div>
+              ))}
+            </div>
             {/* <div className="pt-4">
               <div className="inline-flex items-center space-x-2 bg-primary-light/50 px-6 py-3 rounded-full">
                 <Shield className="w-5 h-5 text-primary" />
@@ -84,7 +104,7 @@ const About = () => {
         </div>
 
         {/* Values Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="md:hidden grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {values.map((value, index) => (
             <div
               key={value.title}
