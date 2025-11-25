@@ -64,14 +64,14 @@ const Footer = () => {
             </div> */}
           </div>
 
-          <div className="flex-1">
-            <h3 className="font-semibold text-foreground mb-4">Services</h3>
-            <ul className=" flex flex-col gap-4 md:flex-row justify-between items-center flex-1 md:px-9">
+          <div className="flex-1 w-full">
+            <h3 className="font-bold text-foreground mb-4">Services</h3>
+            <ul className=" flex flex-col gap-4 md:flex-row justify-between  w-full  flex-1 md:px-9">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground tracking-wider hover:text-primary transition-colors duration-300"
                   >
                     {link.label}
                   </a>

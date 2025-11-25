@@ -35,8 +35,7 @@ const Platform = () => {
                 <img
                   src={platformDesktop}
                   alt="AI Guided TLC platform desktop view showing login and app interface"
-                  className="w-full h-full object-contain rounded-2xl border border-border/50 hover:border-primary/40 transition-all duration-500"
-                  style={{ boxShadow: "var(--shadow-glow)" }}
+                  className="w-full h-full object-contain rounded-2xl  transition-all duration-500"
                 />
               </div>
               <div className="mt-6 text-center">
@@ -52,13 +51,13 @@ const Platform = () => {
 
             {/* Mobile Preview */}
             <div className="relative animate-in fade-in duration-700">
-              <div className="absolute inset-0 bg-gradient-to-l from-primary/10 to-primary-glow/10 blur-3xl" />
+              {/* <div className="absolute inset-0 bg-gradient-to-l from-primary/10 to-primary-glow/10 blur-3xl" /> */}
               <div className="relative md:h-[500px] flex items-center justify-center max-w-sm mx-auto">
                 <img
                   src={platformMobile}
                   alt="AI Guided TLC mobile dashboard showing mental health score and quick actions"
-                  className="w-full h-full object-contain rounded-3xl border border-border/50 hover:border-primary/40 transition-all duration-500"
-                  style={{ boxShadow: "var(--shadow-glow)" }}
+                  className="w-full h-full object-contain rounded-3xl transition-all duration-500"
+                  // style={{ boxShadow: "var(--shadow-glow)" }}
                 />
               </div>
               <div className="mt-6 text-center">

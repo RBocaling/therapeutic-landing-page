@@ -126,8 +126,8 @@ const Header = () => {
 
                     <Button
                       onClick={() => {
-                        scrollToSection("hero");
-                        setIsGetStartedOpen(false);
+                        window.location.href =
+                          "https://ascot-mentalhealthcare.site";
                       }}
                       variant="outline"
                       className="h-14 rounded-2xl border-2 border-border/50 bg-background/50 backdrop-blur-xl hover:bg-accent/50 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02] text-base font-medium relative overflow-hidden group"
@@ -162,8 +162,7 @@ const Header = () => {
             )}
           </button>
         </div>
-
-        {/* Mobile Menu */}
+        ;{/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-in fade-in slide-in-from-top-2 bg-white  relative z-[99999] h-[90vh]">
             <nav className="flex flex-col space-y-2">
@@ -240,8 +239,8 @@ const Header = () => {
 
                         <Button
                           onClick={() => {
-                            scrollToSection("hero");
-                            setIsGetStartedOpen(false);
+                            window.location.href =
+                              "https://ascot-mentalhealthcare.site";
                           }}
                           variant="outline"
                           className="h-14 rounded-2xl border-2 border-border/50 bg-background/50 backdrop-blur-xl hover:bg-accent/50 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02] text-base font-medium relative overflow-hidden group"
