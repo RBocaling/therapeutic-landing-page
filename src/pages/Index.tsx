@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Platform from "@/components/Platform";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/scroll";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Platform />
       <Team />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
