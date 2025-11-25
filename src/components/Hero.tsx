@@ -57,18 +57,25 @@ const Hero = () => {
                 Therapeutic
               </span>
             </div>
-
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              ASCOT
-              <span className="block bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-                Health Care
-              </span>
-            </h1>
+            <div className=" ">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                {" "}
+                <div className="flex">
+                  {" "}
+                  <img src="/askot.png" className="w-16 h-16" alt="" />
+                  ASCOT
+                </div>
+                <span className="block bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent ">
+                  Health Care
+                </span>
+              </h1>
+            </div>
 
             <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
               Connect with professional counselors, access personalized
-              assessments, and engage in AI-guided wellness exercises—all in one
-              platform.
+              assessments, learn with free mental health courses, participate in
+              the digital community, and engage in AI-guided Therapeutic
+              Lifestyle Changes—all in one platform.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -140,7 +147,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <img src="/bg.jpg"  className="absolute top-0 left-0 h-screen w-full opacity-10"/>
+      <img
+        src="/bg.jpg"
+        className="absolute top-0 left-0 h-screen w-full opacity-10"
+      />
     </section>
   );
 };
