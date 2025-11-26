@@ -123,7 +123,9 @@ const Header = () => {
                     >
                       <span className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                       <Download className="mr-2 h-5 w-5 relative z-10" />
-                      <span className="relative z-10">Download App</span>
+                      <span className="relative z-10">
+                        Download Android App
+                      </span>
                     </Button>
 
                     <Button
@@ -235,7 +237,9 @@ const Header = () => {
                         >
                           <span className="absolute inset-0 bg-gradient-to-r from-primary-glow to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                           <Download className="mr-2 h-5 w-5 relative z-10" />
-                          <span className="relative z-10">Download App</span>
+                          <span className="relative z-10">
+                            Download Android App
+                          </span>
                         </Button>
 
                         <Button
